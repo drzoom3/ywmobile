@@ -143,6 +143,6 @@ module.exports = function (grunt) {
     grunt.registerTask("process_js", ["jscs", "jshint"]);
     
     /* Start Express server */
-    grunt.registerTask("server", ["shell"]);
+    grunt.registerTask("server", ["stylus", "autoprefixer", "cssmin", "copy", "clean", "react", "uglify", "htmlmin", "shell"]);
 
 };

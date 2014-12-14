@@ -2,7 +2,7 @@
   "name": "weather-mobile",
   "version": "0.0.1",
   "description": "Weather For Mobile Devices",
-  "main": "",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +22,7 @@
     "url": "https://github.com/drzoom3/ywmobile/issues"
   },
   "homepage": "https://github.com/drzoom3/ywmobile",
-  "devDependencies": {
+  "dependencies": {
     "bower": "^1.3.12",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",

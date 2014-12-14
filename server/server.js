@@ -46,5 +46,5 @@ io.on('connection', function(socket){
         })        
     });
 });
-
-http.listen(8080);
+var port = process.env.PORT || 8080;
+http.listen(port);
