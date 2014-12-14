@@ -1,0 +1,59 @@
+.view-daytime {
+    padding: 5px 10px;  
+    font-size: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+        
+    &__daytime {
+        flex: 1 25%;
+        max-width: 75px;
+        color: rgba(0,0,0,.65);
+        line-height: 32px;
+        text-transform: capitalize;
+    } 
+    
+    &__description {
+        flex: 1;
+    }
+    
+    &__base {
+        display: flex;
+        flex-flow: row nowrap;
+        line-height: 32px;
+        height: 30px;
+    }
+    
+    &__other {
+        font-size: 12px;
+        line-height: 1.5em;
+        margin: 3px 0 5px;
+    }
+    
+    &__icon {
+        flex: 1 15%;        
+        max-width: 40px;
+        text-align: center;
+    }
+    
+    &__min {
+        flex: 1 15%;        
+        max-width: 40px;
+        text-align: right;
+        padding: 0 5px;
+    }
+    
+    &__max {
+        flex: 1 15%;        
+        max-width: 40px;
+        text-align: right;
+        padding: 0 5px;
+    }
+    
+    &__weather {
+    }
+    
+    &__info {
+        color: rgba(0,0,0,.65);
+        margin: 3px 0 0;
+    }
+}

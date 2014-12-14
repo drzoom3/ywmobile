@@ -1,0 +1,83 @@
+.view-visual {    
+    
+    &__main {
+    }
+    
+    &__days {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 5px 0;
+        height: 150px;
+        padding: 20px 10px 0;
+    }
+    
+    &__item {        
+        flex: 1;
+        height: 100%;
+        position: relative;
+        max-width: 145px;
+        
+        &_plus .view-visual__bar:before {
+            background: #db953a;
+        }
+        
+        &_minus .view-visual__bar:before {
+            background: #3a95db;
+        }
+    }
+    
+    &__bar {
+        position: absolute;
+        bottom: 0;
+        background: #FAFAFA;
+        width: 100%;
+        left:0;
+        min-height: 60px;        
+        
+        &:before {
+            content:"";
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            background: #DEDEDE;
+        }
+    }
+    
+    &__temp {
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        left:0;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    &__weather {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        left: 0;
+    }
+    
+    &__icon {
+        text-align: center;
+        height: 35px;
+        padding: 5px 0;
+    }
+    
+    &__day {
+        font-size: 13px;
+        color: rgba(0,0,0,.8);
+        text-align: center;
+        text-transform: capitalize;
+        
+        &_holiday {
+            color: #FF1500;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.view-main {
+    
+    padding: 10px;
+    
+    &__header {
+        display: flex;
+        flex-flow: row nowrap;
+        
+        &__left {
+            overflow: hidden;
+            flex: 1 50%;
+            padding: 0 15px 0 0;
+            max-width: 147px;
+        }
+        
+        &__right {
+            overflow: hidden;
+            flex: 1 50%;
+            padding: 0 0 0 5px;
+            
+            .view-main__info {
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+    
+    &__footer {
+        display: flex;
+        flex-flow: row nowrap;
+        
+        &__left {
+            overflow: hidden;
+            flex: 1 25%;
+            padding: 0 15px 0 0;
+            max-width: 75px;
+        }
+        
+        &__right {
+            overflow: hidden;
+            flex: 1 75%;
+        }
+    }
+    
+    &__temp {
+        font-size: 46px;        
+        text-align: right;
+    }
+    
+    &__info {        
+        font-size: 12px;
+        padding: 5px 0 0 0;
+        line-height: 1.5;
+        color: rgba(0,0,0,.65);
+    }
+    
+    &__icon {        
+    }
+    
+    &__weather {        
+        font-size: 14px;
+        padding: 10px 0 0;
+    }
+}

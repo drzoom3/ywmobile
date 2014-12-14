@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+    <head lang="en">
+        <title>Yandex Weather</title>
+
+        <meta charSet="UTF-8"/>
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="dist/css/weather.min.css" media="screen" />
+        
+        <script src="dist/js/jquery.min.js" defer="true" ></script>
+        <script src="dist/js/bootstrap.min.js" defer="true"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a class="header__logo" href="//www.yandex.ru">
+                <img src="http://yastatic.net/www/2.131/yaru/i/logo.png" alt="Яндекс" width="67" height="27"/>
+            </a>
+            <a href="#" class="header__category">Погода</a>
+        </header>
+        <div class="search">
+            <form>
+                <div class="search__input-wrap">
+                    <input class="search__input" />
+                    <span class="search__clear hide"></span>
+                </div>
+                <button type="submit" class="search__submit">Найти</button>
+            </form>
+        </div>
+        <div class="tabs-block">
+            <ul class="tabs" role="tablist">
+                <li class="tabs__item active"><a href="#short" data-toggle="tab" class="tabs__link" role="tab" aria-controls="short" aria-expanded="true">Кратко</a></li>
+                <li class="tabs__item"><a href="#full" data-toggle="tab" class="tabs__link tabs__item_active" role="tab" aria-controls="full" aria-expanded="true" >Подробно</a></li>
+                <li class="tabs__item"><a href="#visual" data-toggle="tab" class="tabs__link" role="tab" aria-controls="hourly" aria-expanded="true">Наглядно</a></li>
+            </ul>
+        </div>
+        
+        <div id="short" class="fade in active">
+        <div class="view-short">
+            <div class="view-short__item">
+                <div class="view-short__day">
+                    <div class="day-block day-block_holiday">Сегодня, 7 ноября</div>
+                </div>
+                <div class="view-short__main">
+                    <div class="view-main">
+                        <div class="view-main__header">
+                            <div class="view-main__header__left"><div class="view-main__temp">+45&deg;C</div></div>
+                            <div class="view-main__header__right">
+                                <div class="view-main__info">Ветер: 5 м/с<br/>Ветер: 5 м/с<br/>Ветер: 5 м/с</div>
+                            </div>
+                        </div>
+                        <div class="view-main__footer">
+                            <div class="view-main__footer__left"><div class="view-main__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="48" height="48" /></div></div>
+                            <div class="view-main__footer__right">
+                                <div class="view-main__weather">облачно,<br/>временами снег</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-short__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Утром</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">+15</div>
+                                <div class="view-daytime__max">+30</div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="view-short__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Вечером</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">0</div>
+                                <div class="view-daytime__max">+3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-short__item">
+                <div class="view-short__day">
+                    <div class="day-block">Сегодня, 7 ноября</div>
+                </div>
+                <div class="view-short__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Утром</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">+15</div>
+                                <div class="view-daytime__max">+30</div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="view-short__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Вечером</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">0</div>
+                                <div class="view-daytime__max">+3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="full" class="fade">
+        <div class="view-full">
+            <div class="view-full__item">
+                <div class="view-short__day">
+                    <div class="day-block day-block_holiday">Сегодня, 7 ноября</div>
+                </div>
+                <div class="view-full__main">
+                    <div class="view-main">
+                        <div class="view-main__header">
+                            <div class="view-main__header__left"><div class="view-main__temp">+45&deg;C</div></div>
+                            <div class="view-main__header__right">
+                                <div class="view-main__info">2 часа назад</div>
+                            </div>
+                        </div>
+                        <div class="view-main__footer">
+                            <div class="view-main__footer__left"><div class="view-main__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="48" height="48" /></div></div>
+                            <div class="view-main__footer__right">
+                                <div class="view-main__weather">облачно,<br/>временами снег</div>
+                                <div class="view-main__info">Ветер: 5 м/с<br/>Ветер: 5 м/с<br/>Ветер: 5 м/с</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-full__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Утром</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">+15</div>
+                                <div class="view-daytime__max">+30</div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="view-full__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Вечером</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">0</div>
+                                <div class="view-daytime__max">+3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-full__item">
+                <div class="view-full__day">
+                    <div class="day-block">Сегодня, 7 ноября</div>
+                </div>
+                <div class="view-full__daytime">
+                    <div class="view-daytime">
+                        <div class="view-daytime__daytime">Утром</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">+15</div>
+                                <div class="view-daytime__max">+30</div>
+                            </div>
+                            <div class="view-daytime__other">
+                                <div class="view-daytime__weather">облачно, временами снег</div>
+                                <div class="view-daytime__info">Ветер: 5 м/с<br/>Ветер: 5 м/с<br/>Ветер: 5 м/с</div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="view-full__daytime">
+                   <div class="view-daytime">
+                        <div class="view-daytime__daytime">Вечером</div>
+                        <div class="view-daytime__description">
+                            <div class="view-daytime__base">
+                                <div class="view-daytime__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="30" height="30" /></div>
+                                <div class="view-daytime__min">0</div>
+                                <div class="view-daytime__max">+3</div>
+                            </div>
+                            <div class="view-daytime__other">
+                                <div class="view-daytime__weather">облачно, временами снег</div>
+                                <div class="view-daytime__info">Ветер: 5 м/с<br/>Ветер: 5 м/с<br/>Ветер: 5 м/с</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="visual" class="fade">
+        <div class="view-visual">
+           <div class="view-visual__main">
+               <div class="view-main">
+                    <div class="view-main__header">
+                        <div class="view-main__header__left"><div class="view-main__temp">+45&deg;C</div></div>
+                        <div class="view-main__header__right">
+                            <div class="view-main__info">2 часа назад</div>
+                        </div>
+                    </div>
+                    <div class="view-main__footer">
+                        <div class="view-main__footer__left"><div class="view-main__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="48" height="48" /></div></div>
+                        <div class="view-main__footer__right">
+                            <div class="view-main__weather">облачно,<br/>временами снег</div>                            
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="view-visual__days">
+               <div class="view-visual__item">
+                   <div class="view-visual__bar" style="height: 100%;">
+                       <div class="view-visual__temp">+30</div>                       
+                   </div>
+                   <div class="view-visual__weather">                           
+                       <div class="view-visual__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="25" height="25" /></div>
+                       <div class="view-visual__day view-visual__day_holiday">Пт</div>
+                   </div>
+               </div>
+               <div class="view-visual__item view-visual__item_plus">
+                   <div class="view-visual__bar" style="height: 30%;">
+                       <div class="view-visual__temp">+30</div>                       
+                   </div>
+                   <div class="view-visual__weather">                           
+                       <div class="view-visual__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="25" height="25" /></div>
+                       <div class="view-visual__day">Пт</div>
+                   </div>
+               </div>
+               <div class="view-visual__item view-visual__item_minus">
+                   <div class="view-visual__bar" style="height: 40%;">
+                       <div class="view-visual__temp">+30</div>                       
+                   </div>
+                   <div class="view-visual__weather">                           
+                       <div class="view-visual__icon"><img src="//yastatic.net/weather/i/icons/svg/skc-n.svg" width="25" height="25" /></div>
+                       <div class="view-visual__day">Пт</div>
+                   </div>
+               </div>
+               <div class="view-visual__item"></div>
+               <div class="view-visual__item"></div>
+               <div class="view-visual__item"></div>
+               <div class="view-visual__item"></div>
+               <div class="view-visual__item"></div>
+           </div>
+        </div>
+        </div>
+        <footer class="footer">
+            &copy;2008-2014 ООО &laquo;<a href="//yandex.ru" target="_blank">Яндекс</a>&raquo;<br/>
+            <a href="//feedback2.yandex.ru/company/" target="_blank">Обратная связь</a><br/>
+            <a href="//http://weather.yandex.ru/" target="_blank">Полная версия</a>
+        </footer>
+    </body>
+</html>

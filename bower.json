@@ -1,0 +1,20 @@
+{
+  "name": "weather mobile",
+  "version": "0.0.1",
+  "homepage": "https://github.com/drzoom3/ywmobile",
+  "authors": [
+    "drzom <zoom.site.design@gmail.com>"
+  ],
+  "description": "good",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
